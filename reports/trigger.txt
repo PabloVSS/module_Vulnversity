@@ -1,0 +1,2 @@
+========== TRIGGER REPORT ==========
+Trigger URL: http://10.65.154.154:3333/internal/uploads/php-reverse-shell.phtml

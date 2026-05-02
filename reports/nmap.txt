@@ -1,0 +1,103 @@
+=====================================================
+RECONNAISSANCE REPORT - NMAP
+=====================================================
+[?] How many ports are open? 
+[?] Version of squid proxy: 
+[?] Most likely OS: 
+[?] Web server port: 3333
+-----------------------------------------------------
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-05-01 18:49 -0300
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:49
+Completed NSE at 18:49, 0.00s elapsed
+Initiating NSE at 18:49
+Completed NSE at 18:49, 0.00s elapsed
+Initiating NSE at 18:49
+Completed NSE at 18:49, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 18:49
+Completed Parallel DNS resolution of 1 host. at 18:49, 0.50s elapsed
+Initiating SYN Stealth Scan at 18:49
+Scanning 10.64.187.219 [65535 ports]
+Discovered open port 21/tcp on 10.64.187.219
+Discovered open port 445/tcp on 10.64.187.219
+Discovered open port 22/tcp on 10.64.187.219
+Discovered open port 139/tcp on 10.64.187.219
+SYN Stealth Scan Timing: About 20.81% done; ETC: 18:51 (0:01:58 remaining)
+SYN Stealth Scan Timing: About 28.93% done; ETC: 18:52 (0:02:30 remaining)
+SYN Stealth Scan Timing: About 37.60% done; ETC: 18:53 (0:02:46 remaining)
+SYN Stealth Scan Timing: About 49.80% done; ETC: 18:53 (0:02:11 remaining)
+Increasing send delay for 10.64.187.219 from 0 to 5 due to max_successful_tryno increase to 4
+Stats: 0:02:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 57.55% done; ETC: 18:53 (0:02:05 remaining)
+Stats: 0:02:51 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 57.73% done; ETC: 18:53 (0:02:05 remaining)
+SYN Stealth Scan Timing: About 66.68% done; ETC: 18:54 (0:01:49 remaining)
+Discovered open port 3128/tcp on 10.64.187.219
+SYN Stealth Scan Timing: About 73.48% done; ETC: 18:54 (0:01:32 remaining)
+SYN Stealth Scan Timing: About 79.53% done; ETC: 18:55 (0:01:14 remaining)
+Discovered open port 3333/tcp on 10.64.187.219
+SYN Stealth Scan Timing: About 85.47% done; ETC: 18:55 (0:00:55 remaining)
+SYN Stealth Scan Timing: About 91.14% done; ETC: 18:55 (0:00:36 remaining)
+Completed SYN Stealth Scan at 18:55, 408.88s elapsed (65535 total ports)
+Initiating Service scan at 18:55
+Scanning 6 services on 10.64.187.219
+Completed Service scan at 18:56, 22.09s elapsed (6 services on 1 host)
+NSE: Script scanning 10.64.187.219.
+Initiating NSE at 18:56
+Completed NSE at 18:56, 4.59s elapsed
+Initiating NSE at 18:56
+Completed NSE at 18:56, 2.17s elapsed
+Initiating NSE at 18:56
+Completed NSE at 18:56, 0.00s elapsed
+Nmap scan report for 10.64.187.219
+Host is up (0.15s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 3.0.5
+22/tcp   open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 f7:af:00:62:44:21:1c:67:e5:1e:3a:ea:12:52:8a:9e (RSA)
+|   256 c8:6c:cd:f2:94:02:12:59:5f:6a:63:a7:15:20:a0:7d (ECDSA)
+|_  256 b2:54:b4:87:62:a5:fa:93:ef:24:3d:83:e2:b3:13:09 (ED25519)
+139/tcp  open  netbios-ssn Samba smbd 4
+445/tcp  open  netbios-ssn Samba smbd 4
+3128/tcp open  http-proxy  Squid http proxy 4.10
+|_http-title: ERROR: The requested URL could not be retrieved
+|_http-server-header: squid/4.10
+3333/tcp open  http        Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Vuln University
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-time: 
+|   date: 2026-05-01T21:56:15
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: -1s
+| nbstat: NetBIOS name: , NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   <00>                 Flags: <unique><active>
+|   <03>                 Flags: <unique><active>
+|   <20>                 Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:56
+Completed NSE at 18:56, 0.00s elapsed
+Initiating NSE at 18:56
+Completed NSE at 18:56, 0.00s elapsed
+Initiating NSE at 18:56
+Completed NSE at 18:56, 0.00s elapsed
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 438.66 seconds
+           Raw packets sent: 66832 (2.941MB) | Rcvd: 66805 (2.672MB)

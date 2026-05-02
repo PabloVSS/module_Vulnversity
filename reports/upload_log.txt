@@ -1,0 +1,8 @@
+=====================================================
+EXPLOITATION REPORT - FILE UPLOAD BYPASS
+=====================================================
+[?] Blocked extension: .php
+[?] Allowed extension: .phtml
+[?] Payload status: Ready
+-----------------------------------------------------
+[*] Upload confirmado ✔
